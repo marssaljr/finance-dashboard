@@ -20,7 +20,7 @@ function Calendar() {
 
     return (
         <div className="w-full h-full flex flex-col justify-center gap-2 p-2">
-            <div className="pl-2 flex flex-row gap-6 w-full h-full justify-around text-muted-foreground text-sm">
+            <div className="pl-2 flex flex-row gap-6 md:gap-1 w-full h-full justify-around text-muted-foreground text-sm">
                 <p className="w-5 h-5 items-end">D</p>
                 <p className="w-5 h-5">S</p>
                 <p className="w-5 h-5">T</p>
@@ -29,7 +29,7 @@ function Calendar() {
                 <p className="w-5 h-5 items-end">S</p>
             </div>
             <div className="grid grid-cols-6 gap-2">
-                {getDaysArray(year, month)?.map((day) => <Button variant={new Date().getDay().toString() === day ? 'default' : 'ghost'} className="w-5 h-7 rounded-full" key={day}>{day}</Button>)}
+                {getDaysArray(year, month)?.map((day) => <Button variant={new Date().getDay().toString() === day ? 'default' : 'ghost'} className="rounded-full" key={day}>{day}</Button>)}
             </div>
         </div>
     )
