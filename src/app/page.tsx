@@ -36,7 +36,7 @@ export default function Home() {
   ]
   return (
     <div className="flex w-full h-full backdrop-blur-md bg-gradient-to-r from-background via-secondary to-background">
-      <div className="w-full px-3 pt-8 md:p-8 flex flex-col md:gap-6">
+      <div className="w-full px-3 pt-8 md:p-8 flex flex-col gap-6 md:gap-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           <Card className="">
             <CardHeader>

@@ -1,6 +1,7 @@
 'use client'
 import { BellRing, Moon, SearchCode, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
+import Image from "next/image"
 import type { ReactElement, ReactNode } from "react"
 import { Button } from "../button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../dropdown-menu"
@@ -15,7 +16,7 @@ const AppTopBar = ({ children }: AppTopBarProps) => {
         <div className="w-full">
             <div className="h-16 flex px-4 py-2 gap-2 items-center border-b lg:justify-between">
                 <div className="flex gap-2 items-center">
-                    <img src="/woman.png" alt="woman" className="w-10 h-10 rounded-full" />
+                    <Image src="/woman.png" alt="woman" width={40} height={40} className="w-10 h-10 rounded-full" />
                     <div className="gap-1 hidden lg:flex flex-col ">
                         <h3 className="font-bold text-xs">Syarah Adela</h3>
                         <p className="text-xs">Hello, Welcome back!</p>
