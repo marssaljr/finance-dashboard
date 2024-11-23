@@ -1,4 +1,4 @@
-import moment from "moment";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import { Button } from "../button";
 
@@ -6,14 +6,6 @@ import { Button } from "../button";
 function Calendar() {
     const [year, setYear] = useState(2024)
     const [month, setMonth] = useState(11)
-    function getThisWeekDates() {
-        const weekDates = [];
-        for (let i = 1; i <= 7; i++) {
-            weekDates.push(moment().day(i));
-        }
-        return weekDates;
-    }
-    const thisWeekDates = getThisWeekDates();
 
     const getDaysArray = (year: number, month: number) => {
         const monthIndex = month - 1; // 0..11 instead of 1..12
